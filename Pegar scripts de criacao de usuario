@@ -1,0 +1,13 @@
+--- Pegar scripts de criacao de usuario
+set pages 1000 lines 1000 long 999999
+select dbms_metadata.get_ddl('TABLESPACE','USUARIO_AQUI') DDL from dual;
+
+set pages 1000 lines 1000 long 999999
+select dbms_metadata.get_ddl('USER','USUARIO_AQUI') from dual;
+
+set pages 1000 lines 1000 long 999999
+select dbms_metadata.get_ddl('ROLE','ROLE_AQUI') from dual;
+
+--pegar script de criação de roles
+set pages 1000 lines 1000 long 999999
+select dbms_metadata.get_ddl('ROLE','ROLE_AQUI') from dual;
